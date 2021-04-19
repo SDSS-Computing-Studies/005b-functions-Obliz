@@ -8,4 +8,5 @@ added together
 """
 
 def perimeter(list):
-    return sum(list)
+    Sum = sum(list)
+    return Sum

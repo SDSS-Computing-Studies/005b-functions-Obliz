@@ -7,9 +7,10 @@ Return False if the number is not an integer
 (2 points)
 """
 
-def isInteger(number):
-    if number % 1 == 0:
-        return True
+def isInteger(x):
+    if x%1 == 0:
+        answer = True
+        return answer
     else:
-        return False
-    
+        answer = False
+        return answer

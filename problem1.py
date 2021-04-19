@@ -7,13 +7,18 @@ If the boolean is False, then the larger number is the hypotenuse
 Return the missing side
 (2 points)
 """
-import math 
-def hypotenuse(a,b,boolean):
-    c = math.sqrt(a**2 + b**2)
-
-    if boolean == True and a**2 + b**2 == c**2:
-        return c
-    elif boolean == False and a > b:
-        return math.sqrt(a**2 - b**2)
-    elif boolean == False and a < b:
-        return math.sqrt(b**2 - a**2)
+import math
+def hypotenuse(a,b,c):
+    if c == True:
+        x = (a**2 + b**2)
+        x = math.sqrt(x)
+        return x
+    elif c == False:
+        if a > b:
+            x = (a**2 - b**2)
+            x = math.sqrt(x) 
+            return x
+        elif b > a:
+            x = (b**2 - a**2)
+            x = math.sqrt(x) 
+            return x
